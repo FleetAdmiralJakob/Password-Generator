@@ -1,0 +1,26 @@
+<h1>Password Generator</h1>
+
+<form action="#">
+  <label>Enter Length:</label>
+  <br>
+  <input type="number"/>
+  <br>
+  <br>
+  <label>Use Numbers:</label>
+  <br>
+  <input type="checkbox"/>
+  <br>
+  <br>
+  <label>Use Symbols:</label>
+  <br>
+  <input type="checkbox"/>
+  <br>
+  <br>
+  <br>
+  <button (click)="submit()" type="submit">Generate!</button>
+  <br>
+  <br>
+  <label>Generated Password:</label>
+  <br>
+  <input [value]="getPassword()" type="text"/>
+</form>
