@@ -72,8 +72,7 @@ export class AppComponent {
       console.log("Length: " + this.passwordLength);
     }
   }
-
   getPassword() {
-    return this.password
+    return this.password;
   }
 }

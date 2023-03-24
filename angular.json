@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "password"
+  "defaultProject": "password",
+  "cli": {
+    "analytics": false
+  }
 }
