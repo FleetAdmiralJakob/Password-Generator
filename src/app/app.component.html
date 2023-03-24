@@ -1,26 +1,30 @@
-<h1>Password Generator</h1>
 
-<form action="#">
-  <label>Enter Length:</label>
-  <br>
-  <input type="number" (change)="changePasswordProperties(undefined, undefined, $event)"/>
-  <br>
-  <br>
-  <label>Use Numbers:</label>
-  <br>
-  <input type="checkbox" (change)="changePasswordProperties(undefined, $event, undefined)"/>
-  <br>
-  <br>
-  <label>Use Symbols:</label>
-  <br>
-  <input type="checkbox" (change)="changePasswordProperties($event, undefined, undefined)"/>
-  <br>
-  <br>
-  <br>
-  <button (click)="submit()" type="submit">Generate!</button>
-  <br>
-  <br>
-  <label>Generated Password:</label>
-  <br>
-  <input [value]="getPassword()" type="text"/>
-</form>
+<h1 class="text-4xl font-bold flex justify-center">Password Generator</h1>
+<div class="flex items-center justify-center m-10">
+  <form action="#">
+    <div class="mb-4">
+      <label class="block font-bold text-gray-700">Enter Length:</label>
+      <input class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1" type="number" (change)="changePasswordProperties(undefined, undefined, $event)"/>
+    </div>
+
+    <div class="mb-4">
+      <label class="block font-bold text-gray-700">Use Numbers:</label>
+      <input class="form-checkbox mt-1 ml-4" type="checkbox" (change)="changePasswordProperties(undefined, $event, undefined)"/>
+    </div>
+
+    <div class="mb-4">
+      <label class="block font-bold text-gray-700">Use Symbols:</label>
+      <input class="form-checkbox mt-1 ml-4" type="checkbox" (change)="changePasswordProperties($event, undefined, undefined)"/>
+    </div>
+
+    <div class="mb-4">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit" (click)="submit()">Generate!</button>
+    </div>
+
+    <div class="mb-4">
+      <label class="block font-bold text-gray-700">Generated Password:</label>
+      <input class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" [value]="getPassword()" type="text"/>
+    </div>
+  </form>
+
+</div>
