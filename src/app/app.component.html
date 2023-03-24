@@ -3,17 +3,17 @@
 <form action="#">
   <label>Enter Length:</label>
   <br>
-  <input type="number"/>
+  <input type="number" (change)="changePasswordProperties(undefined, undefined, $event)"/>
   <br>
   <br>
   <label>Use Numbers:</label>
   <br>
-  <input type="checkbox"/>
+  <input type="checkbox" (change)="changePasswordProperties(undefined, $event, undefined)"/>
   <br>
   <br>
   <label>Use Symbols:</label>
   <br>
-  <input type="checkbox"/>
+  <input type="checkbox" (change)="changePasswordProperties($event, undefined, undefined)"/>
   <br>
   <br>
   <br>
