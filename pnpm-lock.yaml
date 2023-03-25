@@ -23,6 +23,7 @@ specifiers:
   karma-coverage: ~2.2.0
   karma-jasmine: ~5.1.0
   karma-jasmine-html-reporter: ^2.0.0
+  ngx-toastr: ^16.1.0
   postcss: ^8.4.21
   protractor: ~7.0.0
   rxjs: ~7.8.0
@@ -42,6 +43,7 @@ dependencies:
   '@angular/platform-browser': 15.2.4_xekh5dgmm6gkgjv2myjvrtizzi
   '@angular/platform-browser-dynamic': 15.2.4_5mnga6y36cit4gnnhq4wsik724
   '@angular/router': 15.2.4_kei2kfq5mlkkjoqjistzcp4jwm
+  ngx-toastr: 16.1.0_wuz2zxgcjnh7setva2zix2kx3u
   rxjs: 7.8.0
   tslib: 2.5.0
   zone.js: 0.13.0
@@ -5470,6 +5472,19 @@ packages:
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
+
+  /ngx-toastr/16.1.0_wuz2zxgcjnh7setva2zix2kx3u:
+    resolution: {integrity: sha512-jMnkauggRE8264vR4NtOgK3QI7zmufO3Z7wrkg3j7A7ZVpkCKDXgklsAZM9aiHxDyttM2K+Na6a6L004uPeRKA==}
+    peerDependencies:
+      '@angular/common': '>=14.0.0-0'
+      '@angular/core': '>=14.0.0-0'
+      '@angular/platform-browser': '>=14.0.0-0'
+    dependencies:
+      '@angular/common': 15.2.4_choqga5afxroq3fvnyuwxfqxkm
+      '@angular/core': 15.2.4_rxjs@7.8.0+zone.js@0.13.0
+      '@angular/platform-browser': 15.2.4_xekh5dgmm6gkgjv2myjvrtizzi
+      tslib: 2.5.0
+    dev: false
 
   /nice-napi/1.0.2:
     resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}
