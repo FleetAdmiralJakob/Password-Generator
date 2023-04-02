@@ -37,7 +37,8 @@ export class AppComponent {
     }
   }
 
-  submit() {
+  submit(e:any) {
+    e.preventDefault();
     this.password = '';
     if (this.passwordLength < 6) {
       this.toastr.error('Password length must be at least 6 characters long, otherwise it\'s not secure!', 'Error!');
