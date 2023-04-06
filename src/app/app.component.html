@@ -1,24 +1,20 @@
-
-<h1 class="text-4xl font-bold flex justify-center">Password Generator</h1>
-<div class="flex justify-center">
-<div class="m-10">
-  <form action="#">
+<div class="flex justify-center mb-10 ml-10 mr-10">
+  <div>
+  <h1 class="text-4xl font-bold">Password Generator</h1>
+  <form action="#" class="mt-10">
     <div class="mb-4">
       <label class="block font-bold text-gray-700">Enter Length:</label>
       <input class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1" type="number" (change)="changePasswordProperties(undefined, undefined, $event); changePasswordSecurityStatus($event)"/>
       <p class="mt-1.5" *ngIf="showLengthSecurityStatus">{{passwordSecurityStatus}}</p>
     </div>
-
     <div class="mb-4">
       <label class="block font-bold text-gray-700">Use Numbers:</label>
       <input class="form-checkbox mt-1 ml-4" type="checkbox" (change)="changePasswordProperties(undefined, $event, undefined)"/>
     </div>
-
     <div class="mb-4">
       <label class="block font-bold text-gray-700">Use Symbols:</label>
       <input class="form-checkbox mt-1 ml-4" type="checkbox" (change)="changePasswordProperties($event, undefined, undefined)"/>
     </div>
-
     <div class="mb-4">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit" (click)="submit($event)">Generate!</button>
     </div>
@@ -30,3 +26,4 @@
   </div>
 </div>
 </div>
+<a class="absolute bottom-3 left-0 h-10 w-20 md:h-20 md:w-40" href="https://github.com/FleetAdmiralJakob/Password-Generator"><img ngSrc="assets/github-logo.png" alt="Github" fill/></a>
