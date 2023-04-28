@@ -81,7 +81,6 @@ export class AppComponent {
   }
 
   changePasswordSecurityStatus(length: any) {
-    console.log(length.target.value);
     if (length.target.value < 6) {
       this.passwordSecurityStatus = 'Not Secure';
     } else if (length.target.value >= 6 && length.target.value < 12) {
