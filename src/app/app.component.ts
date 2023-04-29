@@ -17,6 +17,7 @@ export class AppComponent {
   passwordLength = 0;
   passwordSecurityStatus = '';
   showLengthSecurityStatus = false;
+  passwordSecurityStatusColor = '';
 
 
   constructor(private toastr: ToastrService) {
@@ -83,10 +84,13 @@ export class AppComponent {
   changePasswordSecurityStatus(length: any) {
     if (length.target.value < 6) {
       this.passwordSecurityStatus = 'Not Secure';
+      this.passwordSecurityStatusColor = 'red';
     } else if (length.target.value >= 6 && length.target.value < 12) {
       this.passwordSecurityStatus = 'Secure';
+      this.passwordSecurityStatusColor = 'blue';
     } else if (length.target.value >= 12) {
       this.passwordSecurityStatus = 'Very Secure';
+      this.passwordSecurityStatusColor = 'green';
     }
   }
 

@@ -5,7 +5,7 @@
     <div class="mb-4">
       <label class="block font-bold text-gray-700">Enter Length:</label>
       <input class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1" type="number" (change)="changePasswordProperties(undefined, undefined, $event); changePasswordSecurityStatus($event)"/>
-      <p class="mt-1.5" *ngIf="showLengthSecurityStatus">{{passwordSecurityStatus}}</p>
+      <p class="mt-1.5 font-bold" [style.color]="passwordSecurityStatusColor" *ngIf="showLengthSecurityStatus">{{passwordSecurityStatus}}</p>
     </div>
     <div class="mb-4">
       <label class="block font-bold text-gray-700">Use Numbers:</label>
@@ -21,7 +21,7 @@
   </form>
   <div class="mb-4">
     <label class="block font-bold text-gray-700">Generated Password:</label>
-    <input class="form-input mt-1 mb-2 block w-full border-gray-300 rounded-md shadow-sm p-2" [value]="getPassword()" type="text"/>
+    <input class="form-input mt-1 mb-2 block w-full border-gray-300 rounded-md shadow-sm p-2" readonly [value]="getPassword()" type="text"/>
     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit" (click)="copyToClipboard()">Copy to Clipboard</button>
   </div>
 </div>
