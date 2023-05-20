@@ -94,13 +94,13 @@ export class AppComponent {
     }
   }
 
-  copyToClipboard() {
-    const el = document.createElement('textarea');
-    el.value = this.password;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
-    this.toastr.success('Password copied to clipboard!', 'Success!')
+  async copyToClipboard() {
+    try {
+      await navigator.clipboard.writeText(this.password);
+      this.toastr.success('Password copied to clipboard!', 'Success!');
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+      this.toastr.error('Failed to copy password to clipboard', 'Error');
+    }
   }
 }
