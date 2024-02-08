@@ -33,8 +33,10 @@ export class AppComponent {
   }
 
   calculatePassword(characters: string) {
+    const array = new Uint32Array(this.passwordLength);
+    window.crypto.getRandomValues(array);
     for (let i = 0; i < this.passwordLength; i++) {
-      this.password += characters.charAt(Math.floor(Math.random() * characters.length));
+      this.password += characters.charAt(array[i] % characters.length);
     }
   }
 
