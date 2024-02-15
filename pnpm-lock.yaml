@@ -45,7 +45,7 @@ dependencies:
 devDependencies:
   '@angular-devkit/build-angular':
     specifier: ~15.2.4
-    version: 15.2.4(@angular/compiler-cli@15.2.4)(karma@6.1.2)(protractor@7.0.0)(tailwindcss@3.2.7)(typescript@4.9.5)
+    version: 15.2.4(@angular/compiler-cli@15.2.4)(karma@6.3.16)(protractor@7.0.0)(tailwindcss@3.2.7)(typescript@4.9.5)
   '@angular/cli':
     specifier: ~15.2.4
     version: 15.2.4
@@ -71,8 +71,8 @@ devDependencies:
     specifier: ~7.0.0
     version: 7.0.0
   karma:
-    specifier: ~6.1.0
-    version: 6.1.2
+    specifier: ~6.3.16
+    version: 6.3.16
   karma-chrome-launcher:
     specifier: ~3.1.0
     version: 3.1.1
@@ -81,10 +81,10 @@ devDependencies:
     version: 2.2.0
   karma-jasmine:
     specifier: ~5.1.0
-    version: 5.1.0(karma@6.1.2)
+    version: 5.1.0(karma@6.3.16)
   karma-jasmine-html-reporter:
     specifier: ^2.0.0
-    version: 2.0.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0)(karma@6.1.2)
+    version: 2.0.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0)(karma@6.3.16)
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
@@ -124,7 +124,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular@15.2.4(@angular/compiler-cli@15.2.4)(karma@6.1.2)(protractor@7.0.0)(tailwindcss@3.2.7)(typescript@4.9.5):
+  /@angular-devkit/build-angular@15.2.4(@angular/compiler-cli@15.2.4)(karma@6.3.16)(protractor@7.0.0)(tailwindcss@3.2.7)(typescript@4.9.5):
     resolution: {integrity: sha512-wt0S4oz0vxuW0/Ak5X0vQ7s7TSPynmktVNJblu9SFRgwCD3kplV2B693F+M6t8eLzSy0UCSbZp9h3Ae8gLEiEw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -185,7 +185,7 @@ packages:
       https-proxy-agent: 5.0.1
       inquirer: 8.2.4
       jsonc-parser: 3.2.0
-      karma: 6.1.2
+      karma: 6.3.16
       karma-source-map-support: 1.4.0
       less: 4.1.3
       less-loader: 11.1.0(less@4.1.3)(webpack@5.76.1)
@@ -2194,6 +2194,10 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dev: true
 
+  /@socket.io/component-emitter@3.1.0:
+    resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
+    dev: true
+
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
@@ -2233,10 +2237,6 @@ packages:
     resolution: {integrity: sha512-p7ienRMiS41Nu2/igbJxxLDWrSZ0WxM8UQgCeO9KhoVF7cOVFkrKsiDr1EsJIla8vV3oEEjGcz11jc5yimhzZw==}
     dependencies:
       '@types/node': 18.15.7
-    dev: true
-
-  /@types/component-emitter@1.2.11:
-    resolution: {integrity: sha512-SRXjM+tfsSlA9VuG8hGO2nft2p8zjXCK1VcC6N4NXbBbYbSia9kzCChYQajIjzIqOOOuh5Ock6MmV2oux4jDZQ==}
     dev: true
 
   /@types/connect-history-api-fallback@1.3.5:
@@ -2883,11 +2883,6 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
-  /base64-arraybuffer@0.1.4:
-    resolution: {integrity: sha512-a1eIFi4R9ySrbiMuyTGx5e92uRH5tQY6kArNcFaKBUleIoLjdjBg7Zxm3Mqm3Kmkf27HLR/1fnxX9q8GQ7Iavg==}
-    engines: {node: '>= 0.6.0'}
-    dev: true
-
   /base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: true
@@ -3323,10 +3318,6 @@ packages:
 
   /commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
-    dev: true
-
-  /component-emitter@1.3.0:
-    resolution: {integrity: sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==}
     dev: true
 
   /compressible@2.0.18:
@@ -3780,24 +3771,25 @@ packages:
     dev: true
     optional: true
 
-  /engine.io-parser@4.0.3:
-    resolution: {integrity: sha512-xEAAY0msNnESNPc00e19y5heTPX4y/TJ36gr8t1voOaNmTojP9b3oK3BbJLFufW2XFPQaaijpFewm2g2Um3uqA==}
-    engines: {node: '>=8.0.0'}
-    dependencies:
-      base64-arraybuffer: 0.1.4
+  /engine.io-parser@5.2.2:
+    resolution: {integrity: sha512-RcyUFKA93/CXH20l4SoVvzZfrSDMOTUS3bWVpTt2FuFP+XYrL8i8oonHP7WInRyVHXh0n/ORtoeiE1os+8qkSw==}
+    engines: {node: '>=10.0.0'}
     dev: true
 
-  /engine.io@4.1.2:
-    resolution: {integrity: sha512-t5z6zjXuVLhXDMiFJPYsPOWEER8B0tIsD3ETgw19S1yg9zryvUfY3Vhtk3Gf4sihw/bQGIqQ//gjvVlu+Ca0bQ==}
-    engines: {node: '>=10.0.0'}
+  /engine.io@6.5.4:
+    resolution: {integrity: sha512-KdVSDKhVKyOi+r5uEabrDLZw2qXStVvCsEB/LN3mw4WFi6Gx50jTyuxYVCwAAC0U46FdnzP/ScKRBTXb/NiEOg==}
+    engines: {node: '>=10.2.0'}
     dependencies:
+      '@types/cookie': 0.4.1
+      '@types/cors': 2.8.13
+      '@types/node': 18.15.7
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
       cors: 2.8.5
       debug: 4.3.4
-      engine.io-parser: 4.0.3
-      ws: 7.4.6
+      engine.io-parser: 5.2.2
+      ws: 8.11.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -4289,17 +4281,6 @@ packages:
 
   /glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
-    dev: true
-
-  /glob@7.1.6:
-    resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
     dev: true
 
   /glob@7.2.3:
@@ -5030,7 +5011,7 @@ packages:
       - supports-color
     dev: true
 
-  /karma-jasmine-html-reporter@2.0.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0)(karma@6.1.2):
+  /karma-jasmine-html-reporter@2.0.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0)(karma@6.3.16):
     resolution: {integrity: sha512-SB8HNNiazAHXM1vGEzf8/tSyEhkfxuDdhYdPBX2Mwgzt0OuF2gicApQ+uvXLID/gXyJQgvrM9+1/2SxZFUUDIA==}
     peerDependencies:
       jasmine-core: ^4.0.0
@@ -5038,18 +5019,18 @@ packages:
       karma-jasmine: ^5.0.0
     dependencies:
       jasmine-core: 4.6.0
-      karma: 6.1.2
-      karma-jasmine: 5.1.0(karma@6.1.2)
+      karma: 6.3.16
+      karma-jasmine: 5.1.0(karma@6.3.16)
     dev: true
 
-  /karma-jasmine@5.1.0(karma@6.1.2):
+  /karma-jasmine@5.1.0(karma@6.3.16):
     resolution: {integrity: sha512-i/zQLFrfEpRyQoJF9fsCdTMOF5c2dK7C7OmsuKg2D0YSsuZSfQDiLuaiktbuio6F2wiCsZSnSnieIQ0ant/uzQ==}
     engines: {node: '>=12'}
     peerDependencies:
       karma: ^6.0.0
     dependencies:
       jasmine-core: 4.6.0
-      karma: 6.1.2
+      karma: 6.3.16
     dev: true
 
   /karma-source-map-support@1.4.0:
@@ -5058,8 +5039,8 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /karma@6.1.2:
-    resolution: {integrity: sha512-mKbxgsJrt3UHBPdKfCxC2eg3lpqyt6hQRFhNWJ2sk0wUnbnLPEiCpgIgiycuLSra0vC6TaK9OPJiMGATGzgH/A==}
+  /karma@6.3.16:
+    resolution: {integrity: sha512-nEU50jLvDe5yvXqkEJRf8IuvddUkOY2x5Xc4WXHz6dxINgGDrgD2uqQWeVrJs4hbfNaotn+HQ1LZJ4yOXrL7xQ==}
     engines: {node: '>= 10'}
     hasBin: true
     dependencies:
@@ -5078,10 +5059,11 @@ packages:
       log4js: 6.9.1
       mime: 2.6.0
       minimatch: 3.1.2
+      mkdirp: 0.5.6
       qjobs: 1.2.0
       range-parser: 1.2.1
       rimraf: 3.0.2
-      socket.io: 3.1.2
+      socket.io: 4.7.4
       source-map: 0.6.1
       tmp: 0.2.1
       ua-parser-js: 0.7.34
@@ -5398,12 +5380,6 @@ packages:
 
   /minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
-    dev: true
-
-  /minimatch@3.0.4:
-    resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
-    dependencies:
-      brace-expansion: 1.1.11
     dev: true
 
   /minimatch@3.1.2:
@@ -6546,7 +6522,7 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.1.6
+      glob: 7.2.3
     dev: true
 
   /run-async@2.4.1:
@@ -6819,34 +6795,36 @@ packages:
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     dev: true
 
-  /socket.io-adapter@2.1.0:
-    resolution: {integrity: sha512-+vDov/aTsLjViYTwS9fPy5pEtTkrbEKsw2M+oVSoFGw6OD1IpvlV1VPhUzNbofCQ8oyMbdYJqDtGdmHQK6TdPg==}
+  /socket.io-adapter@2.5.2:
+    resolution: {integrity: sha512-87C3LO/NOMc+eMcpcxUBebGjkpMDkNBS9tf7KJqcDsmL936EChtVva71Dw2q4tQcuVC+hAUy4an2NO/sYXmwRA==}
+    dependencies:
+      ws: 8.11.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: true
 
-  /socket.io-parser@4.0.5:
-    resolution: {integrity: sha512-sNjbT9dX63nqUFIOv95tTVm6elyIU4RvB1m8dOeZt+IgWwcWklFDOdmGcfo3zSiRsnR/3pJkjY5lfoGqEe4Eig==}
+  /socket.io-parser@4.2.4:
+    resolution: {integrity: sha512-/GbIKmo8ioc+NIWIhwdecY0ge+qVBSMdgxGygevmdHj24bsfgtCmcUUcQ5ZzcylGFHsN3k4HB4Cgkl96KVnuew==}
     engines: {node: '>=10.0.0'}
     dependencies:
-      '@types/component-emitter': 1.2.11
-      component-emitter: 1.3.0
+      '@socket.io/component-emitter': 3.1.0
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /socket.io@3.1.2:
-    resolution: {integrity: sha512-JubKZnTQ4Z8G4IZWtaAZSiRP3I/inpy8c/Bsx2jrwGrTbKeVU5xd6qkKMHpChYeM3dWZSO0QACiGK+obhBNwYw==}
-    engines: {node: '>=10.0.0'}
+  /socket.io@4.7.4:
+    resolution: {integrity: sha512-DcotgfP1Zg9iP/dH9zvAQcWrE0TtbMVwXmlV4T4mqsvY+gw+LqUGPfx2AoVyRk0FLME+GQhufDMyacFmw7ksqw==}
+    engines: {node: '>=10.2.0'}
     dependencies:
-      '@types/cookie': 0.4.1
-      '@types/cors': 2.8.13
-      '@types/node': 18.15.7
       accepts: 1.3.8
       base64id: 2.0.0
+      cors: 2.8.5
       debug: 4.3.4
-      engine.io: 4.1.2
-      socket.io-adapter: 2.1.0
-      socket.io-parser: 4.0.5
+      engine.io: 6.5.4
+      socket.io-adapter: 2.5.2
+      socket.io-parser: 4.2.4
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -7794,9 +7772,9 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
-  /ws@7.4.6:
-    resolution: {integrity: sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==}
-    engines: {node: '>=8.3.0'}
+  /ws@8.11.0:
+    resolution: {integrity: sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==}
+    engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
       utf-8-validate: ^5.0.2
